@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: false }))
 
 app.post('/shorturl', (req, res) => {
     let url = req.body.fullurl;
+    res.redirect('/')
 })
 
 app.get('/', (req, res) => {
