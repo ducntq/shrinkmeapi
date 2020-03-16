@@ -12,7 +12,7 @@
         <form action="/shorturl" method="POST" class="my-4 form-inline">
             <label for="fullurl" id="fullurl">Url</label>
             <input type="url" name="fullurl" placeholder="Dien url vao day">
-            <p class="result"> <%= shorturl %>  </p>
+            <p class="result"> <%= (locals.shorturl !== undefined) ? shorturl : '' %>  </p>
             <button type="submit">Shrink</button>
         </form>
     </div>
